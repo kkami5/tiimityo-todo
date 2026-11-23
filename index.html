@@ -91,7 +91,12 @@
 
       function refresh() {}
 
-      function showSummary() {}
+      function showSummary() {
+
+        let reportText = showReportByStatus(tasks);
+         document.getElementById("reportArea").innerHTML = reportText;
+       
+        }
     </script>
     <!-- JavaScript-tiedostot -->
     <script src="addTask.js"></script>
