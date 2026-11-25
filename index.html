@@ -89,7 +89,17 @@
         addTask();
       }
 
-      function updateTaskInformation() {}
+      function updateTaskInformation() {
+        let taskName = document.getElementById("updateTaskName").value;
+        newStatus = document.getElementById("newStatus").value;
+        let found = updateTask(taskName, newStatus);
+        if (found) {
+          refreshList();
+          document.getElementById("updateTaskName").value = "";
+        } else {
+          alert("Tehtävää ei löytynyt:" + taskName);
+        }
+      }
 
       function refresh() {}
 
