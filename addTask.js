@@ -9,7 +9,7 @@ if(!task.trim()){
 else{
 task={ 
     name: task,
-    status:"Not started",
+    status:"Not Started",
     luontiaika:aika,
 
 };
