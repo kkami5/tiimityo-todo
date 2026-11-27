@@ -1,28 +1,42 @@
 <!doctype html>
 <html lang="fi">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tasks</title>
-
+    
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: #f4f4f4;
+      html,body{
+      height:100%;
       }
-
-      h1,
+      body {
+        font-family: 'DM Sans', sans-serif;
+        margin: 0 auto;
+        padding:0px;
+        background-color: #d3dbe7;
+      }
+      header{
+        color:rgb(245, 244, 244);
+        background-color: rgb(58, 73, 123);
+        font-family:'DM Sans', sans-serif; 
+        padding-left:20px;
+        margin: 0px 0px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+      }
       h2 {
         color: #333;
       }
 
       section {
-        background: white;
+        background: rgba(245, 245, 245, 0.774);
         padding: 15px;
+        margin: 60px 60px;
         margin-bottom: 20px;
-        border-radius: 8px;
+        border-radius: 11px;
       }
 
       input,
@@ -30,24 +44,43 @@
       button {
         padding: 8px;
         margin: 5px;
+        width:200px;
+        background-color:#d2d3d4cf;
+        border-radius: 8px;
+        border-color:#d2d3d4cf;
+        font-size: 18px;
+        font-family: 'DM Sans', sans-serif;
       }
-
-      button {
-        cursor: pointer;
+      #tasksList{
+        padding: 15px 15px;
+        border-radius: 5px;
+        background-color: #f8f6f6d8;
+        border-color: #333333cf;
+        font-family: 'DM Sans', sans-serif;
       }
+      .tasks{
+       margin-bottom: 15px;
+       padding: 8px;
+       font-size: 18px;
+       background-color: #d7dde7cf;
+       border-radius: 8px;
 
-      #tasksList,
+
+      }
       #reportArea {
         margin-top: 15px;
         padding: 10px;
-        border: 1px solid #ccc;
         min-height: 100px;
         background-color: #fafafa;
+        border-radius: 5px;
+        font-size: 20px;
       }
     </style>
   </head>
   <body>
-    <h1>Task management</h1>
+    <header>
+      <h1>Task management</h1>
+    </header>
 
     <!-- Lisätään tehtävä -->
     <section>
