@@ -8,8 +8,15 @@ function refreshList() {
 
     } else {
         for (let i = 0; i < tasks.length; i++) {
-        let task = task [i];
-        taskText += task.name + " - " + task.status + "<br>";
+            let task = tasks[i];
+
+            taskText += task.name + " - " + task.status;
+
+            if (task.updated) {
+                taskText += " - Changed: " + task.updated;
+            }
+
+            taskText += "<br>";
         }
     }
 
