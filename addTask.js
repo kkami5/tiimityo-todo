@@ -19,7 +19,6 @@ tasks.push(task)
 
 let i =alku
   while(alku===i){
-      //document.getElementById("tasksList").innerHTML+= alku + " " + task.name + "   " + "   " + aika + "  "+ task.status + "<br>";
       document.getElementById("tasksList").innerHTML +=
       `<div class="tasks">
        ${alku} ${task.name} ${aika} ${task.status}
