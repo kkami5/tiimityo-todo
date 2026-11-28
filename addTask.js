@@ -3,12 +3,12 @@ let alku=1;
 document.getElementById("tasksList").innerHTML = "";
 function addTask() {
 let task=document.getElementById("taskName").value;       
-let ajanhetki = new Date(); 
-let aika = ajanhetki.getDate()+ "." + (ajanhetki.getMonth()+1)+ "." + ajanhetki.getFullYear() + "  " +ajanhetki.getHours() + ":" + ajanhetki.getMinutes();
 if(!task.trim()){
  return;
 }
 else{
+let ajanhetki = new Date(); 
+let aika = ajanhetki.getDate()+ "." + (ajanhetki.getMonth()+1)+ "." + ajanhetki.getFullYear() + "  " +ajanhetki.getHours() + ":" + ajanhetki.getMinutes();
 task={ 
     name: task,
     status:"Not Started",
